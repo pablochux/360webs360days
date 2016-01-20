@@ -1,0 +1,16 @@
+*{
+	padding: 0;
+	border: 0;
+}
+body{
+	color: #FAFAFA;
+	background: url("http://dash.ga.co/assets/anna-bg.png");
+	text-align: center;
+}
+.container{
+	margin: 0 auto;
+	max-width: 900px;
+}
+button{
+	background-color: #FF0000;
+}
