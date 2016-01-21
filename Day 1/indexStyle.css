@@ -2,15 +2,40 @@
 	padding: 0;
 	border: 0;
 }
-body{
+html{
+	/* Full image background */
+  	background: url("images/background-image.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: #FAFAFA;
-	background: url("http://dash.ga.co/assets/anna-bg.png");
 	text-align: center;
 }
 .container{
 	margin: 0 auto;
 	max-width: 900px;
 }
+img{
+	margin-top: 40px;
+}
+p{
+	font-size: 1.5em;
+}
+button, 
+input{
+	font-size: 1.1em;
+	height: 50px;
+}
+input{
+	padding-left: 15px;
+	width: 180px;
+}
 button{
 	background-color: #FF0000;
+	color: inherit;
+	width: 100px;
+}
+button:hover{
+	background-color: rgba(255,0,0,0.7);
 }
