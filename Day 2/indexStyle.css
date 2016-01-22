@@ -1,95 +1,63 @@
+/* GENERAL */
 *{
 	margin: 0;
 	padding: 0;
 }
-html{
-	background-color: black;
+body{
+	color: #5f5f5f;
+	font-family: Arial;
+	letter-spacing: 2px;
 }
 li{
-	display: inline-block;
-	float: right;
-	padding: 10px;
+	list-style: none;
 }
-a{
+.center{
+	text-align: center;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+/* NAVBAR */
+nav{
+	border-bottom: 1px solid #ccc;
+	height: 30px;
+	width: 100%;
+}
+
+nav a{
+	font-size: 1.1em;
+	color: #5f5f5f;
 	text-decoration: none;
 }
-.navbar-link{
-	color: #444;
+nav li{
+	display: inline-block;
+	padding: 5px 10px;
 }
-.navbar-link:hover{
-	color: #00FF00;
+nav .right{
+	padding-right: 30px;
 }
-#wrapper{
+/* MAIN CONTENT */
+#wrapper {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+h1{
+	font-size: 100px;
+}
+h2{
+	font-size: 2em;
+}
+.orange {
+	color: #ff9933;
+	font-variant: bold;
+}
+p{
 	font-size: 1.2em;
 }
-#main{
-	color: #FFF;
-	text-align: center;
-	padding-top: 50px;
-}
-#rope{
-	color: #17bf4c;
-}
-#rope img{
-	position: absolute;
-	top: -300px;
-	left: 50px;
-}
-#pull-me{
-	position: absolute;
-	left: 140px;
-	top: 350px;
-}
-/* Arrow */
-#arrow{
-	position: relative;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 9px solid transparent;
-    border-right: 9px solid #17bf4c;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-}
-#arrow:after {
-    content: "";
-    position: absolute;
-    border: 0 solid transparent;
-    border-top: 3px solid #17bf4c;
-    border-radius: 20px 0 0 0;
-    top: -12px;
-    left: -9px;
-    width: 12px;
-    height: 12px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-}
-#pull-me span{
-	padding-left: 10px;
-}
-
-input{
-	height: 30px;
-	width: 300px;
-}
-button{
-	background: #12A7A2;
-	border-bottom: 1px solid #0e8480;
-	border-radius: 3px;	
-	color: #FFF;
-	font-size: 1.2em;
-	height: 30px;
-	width: 80px;
-}
-
-
-#text{
-	font-family: ArialMT;
-	font-size: 14px;
-	color: #FFFFFF;
-	line-height: 16px;
+#wrapper div{
+	padding: 50px 0;
+	border-bottom: 1px solid #ccc;
 }
