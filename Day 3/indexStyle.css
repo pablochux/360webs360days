@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-color: #34495e;
+}
+p,
+button{
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	color: #FFF;
+	font-size: 1em;
+    font-weight: 700;
+	letter-spacing: 1px;
+}
+#content{
+	width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+#background{
+	margin: auto;
+	width: 300px;
+	padding: 10px 5px;
+	background-color: rgba(255, 255, 255, 0.25);
+	border-radius: 0 0 5px 5px;
+}
+#color{
+	background-color: #34495e;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	display: inline-block;
+	padding: 7px;
+	position: relative;
+	top: 3px;
+}
+button{
+	background-color: #e74c3c;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 6px #ab3c3c;
+	cursor: pointer;
+	margin-top: 150px;
+	outline: none;
+	padding: 20px 30px;
+	position: relative;
+}
+/* To do the hover effect -> move down the button 2px and reduce the box-shadow 2px
+When clicking we do the same but with 4px to superpose the box shadow (and delelete it) */
+button:hover{
+	top: 2px;
+	box-shadow: 0 4px #ab3c3c;
+}
+/* Use :active insted of :focus because with focus the styles maintains while you dont click in another place. But with :active, the styles only applies when clicking */
+button:active{
+	top: 6px;
+	box-shadow: 0 0 #ab3c3c;
+}
