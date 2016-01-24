@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #333;
+	color: #FFF;
+	font-family: Futura;
+}
+.center{
+	text-align: center;
+}
+.text-container{
+	padding: 20px 0;
+}
+.text-container h1{
+	font-size: 50px;
+	padding-bottom: 20px;
+}
+.text-container{
+	font-size: 18px;
+	font-family: Consolas;
+}
+.image-container{
+	margin: 0 auto8;
+}
+.image-container img{
+	margin-right: 50px;
+}
+.img-container img:last-child{
+	margin-right: 0px;
+}
+
+.winner-container,
+.loser-container1,
+.loser-container2{
+	display: none;
+}
