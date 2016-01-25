@@ -34,6 +34,9 @@ body{
 	margin-right: 0px;
 }
 /* Vistas de ganadores/perdedores */
+.results-containers p{
+	margin-top: 20px;
+}
 .winner-container,
 .loser-container1,
 .loser-container2{
