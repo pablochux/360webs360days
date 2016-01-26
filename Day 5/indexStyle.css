@@ -18,12 +18,13 @@ body{
 }
 h1{
 	font-size: 100px;
-	max-width: 9900px;
+	max-width: 500px;
 	position: absolute;
 	top: 25%;
-	left: 25%;
+	left: 30px;
+	letter-spacing: 5px;
 }
 /* Background color only to the span to do like a highlight effect*/
 span{
-	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.2);
 }
