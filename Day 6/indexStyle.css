@@ -30,14 +30,20 @@ h1{
 #card h3{
 	margin-top: 60px; 
 }
-#card{
-	border-radius: 5px;
-}
+#card,
 figure{
 	border-radius: 5px;
 }
 .click{
 	display: none;
+}
+/* Button to show the borders of the card*/
+.show{
+	width: 120px;
+	height: 40px;
+	font-size: 1rem;
+	margin-top: 20px;
+	transition: all 2s;
 }
 /**/
 .container{
@@ -64,7 +70,7 @@ figure{
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 }
-/* Border test */
+/* Border */
 #card .border{
 	position: absolute;
 	width: 20px;
@@ -106,20 +112,12 @@ figure{
 #card.flipped {
   -webkit-transform: rotateY(180deg);
 }
-#card.flippedx2{
-  -webkit-transform: rotateY(720deg);
-}
+/*Borders effect*/
 #card.preview-front-left {
   -webkit-transform: rotateY(-45deg);
 }
 #card.preview-front-right {
   -webkit-transform: rotateY(45deg);
-}
-#card.preview-back-left {
-  -webkit-transform: rotateY(135deg);
-}
-#card.preview-back-right {
-  -webkit-transform: rotateY(225deg);
 }
 /* Front of the card */
 #card .front {
@@ -128,17 +126,8 @@ figure{
 #card .front button{
 	margin-top: 60px;
 }
-
 /* Back of the card */
 #card .back {
 	background-color: #FFF;
  	-webkit-transform: rotateY(180deg); /* Rotate the card to be in the back of #card*/
-}
-
-.show{
-	width: 120px;
-	height: 40px;
-	font-size: 1rem;
-	margin-top: 20px;
-	transition: all 2s;
 }

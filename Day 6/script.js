@@ -3,15 +3,19 @@
  	$('.result').click(function(){
  		$('#card').addClass('flipped');
  	});
-
  	$('.return').click(function(){
  		$('#card').removeClass('flipped'); 	
  	})
+ 	$('.next').click(function(){
+ 		$('#card').removeClass('flipped'); 	
+ 		$('.front h3').text('There aren\'t more questions');
+ 		$('.back h3').text('Sorry');
+ 	});
  	// Show 
  	$('.show').click(function(){
  		if($('.border').hasClass('blue')){
  			$('.border').removeClass('blue')
- 			$('.click').hide();;
+ 			$('.click').hide();
  			$('.show').text('Show borders');
  		} else{
  			$('.border').addClass('blue');
@@ -32,18 +36,5 @@
  	});
  	$('.front .border-right').mouseleave(function(){
  		$('#card').removeClass('preview-front-right');
- 	});
- 	// BACK
- 	 $('.back .border-left').click(function(){
- 		$('#card').addClass('preview-back-left');
- 	});
- 	$('.back .border-left').mouseleave(function(){
- 		$('#card').removeClass('preview-back-left');
- 	});
- 	$('.back .border-right').click(function(){
- 		$('#card').addClass('preview-back-right');
- 	});
- 	$('.back .border-right').mouseleave(function(){
- 		$('#card').removeClass('preview-back-right');
  	});
 })
