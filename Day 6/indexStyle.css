@@ -1,0 +1,144 @@
+/* Reset */
+*{
+	margin: 0;
+	padding: 0;
+}
+.center{
+	text-align: center;
+}
+.blue{
+	background-color: blue;
+}
+/* Background properties */
+html{
+	background: url(images/bg.jpeg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body{
+	font-family: Helvetica;
+}
+h1,
+.click{
+	color: white;
+}
+h1{
+	margin-top: 40px;
+}
+#card h3{
+	margin-top: 60px; 
+}
+#card{
+	border-radius: 5px;
+}
+figure{
+	border-radius: 5px;
+}
+.click{
+	display: none;
+}
+/**/
+.container{
+	width: 220px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+	-webkit-perspective: 800;
+	top: 50px;
+}
+#card {
+	/* Ensure the transform-origin will occur in the center of the element */
+	width: 100%;
+	height: 100%;
+	/**/
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+}
+#card figure {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+}
+/* Border test */
+#card .border{
+	position: absolute;
+	width: 20px;
+	height: 250px;
+}
+#card .border-right{
+	top: 0;
+	right: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#card .border-left{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;	
+}
+/* General card buttons */
+#card button{
+	background-color: rgba(255, 0, 21, 0.74);
+	border-radius: 3px;
+	border: none;
+	box-shadow: 0 3px #ab3c3c;
+	color: white;
+	font-size: 1rem;
+	height: 30px;
+	margin-top: 100px;
+	outline: none;
+	position: relative;
+	width: 80px;
+}
+/* Button effect */
+#card button:hover{
+	top: 1px;
+	box-shadow: 0 2px #ab3c3c;
+}
+#card button:active{
+	top: 2px;
+	box-shadow: 0 1px #ab3c3c;
+}
+#card.flipped {
+  -webkit-transform: rotateY(180deg);
+}
+#card.flippedx2{
+  -webkit-transform: rotateY(720deg);
+}
+#card.preview-front-left {
+  -webkit-transform: rotateY(-45deg);
+}
+#card.preview-front-right {
+  -webkit-transform: rotateY(45deg);
+}
+#card.preview-back-left {
+  -webkit-transform: rotateY(135deg);
+}
+#card.preview-back-right {
+  -webkit-transform: rotateY(225deg);
+}
+/* Front of the card */
+#card .front {
+  background: #FFF;
+}
+#card .front button{
+	margin-top: 60px;
+}
+
+/* Back of the card */
+#card .back {
+	background-color: #FFF;
+ 	-webkit-transform: rotateY(180deg); /* Rotate the card to be in the back of #card*/
+}
+
+.show{
+	width: 120px;
+	height: 40px;
+	font-size: 1rem;
+	margin-top: 20px;
+	transition: all 2s;
+}
