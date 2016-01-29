@@ -19,9 +19,7 @@ html{
 section.center{
 	margin-top: 50px;
 }
-.roll{
-	transition: 1s;
-}
+
 button{
 	margin-top: 20px;
 	font-size: 1rem;
@@ -103,7 +101,7 @@ button:active{
 #cube.show { -webkit-transform: translateZ(-100px) rotateX(20deg); }
 
 
-#cube { -webkit-transition: -webkit-transform 0.1s; }
+#cube { -webkit-transition: -webkit-transform 1s; }
 
 @-webkit-keyframes testAnimation{
 	0% {
