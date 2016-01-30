@@ -1,32 +1,18 @@
 $(document).ready(function(){
-	console.log('Start');
-	// Se selecciona un color
-		// Se guarda en selectedColour
-	var selectedColour;
-	console.log(selectedColour);
+	var selectedColour, elementClicked;
 	$('.colour').click(function(){
-		console.log('test');
+		// Controller for 
+		if (elementClicked != undefined) {
+			$(elementClicked).removeClass('clicked');
+			console.log('Element clicked != undefined');
+		};
+		// Assign the variables
+		elementClicked = $(this);
 		selectedColour = $(this).css('background-color');
-		$(this).addClass('clicked');
-		console.log(selectedColour);
-		$('section').click(function(){
+		$(this).addClass('clicked'); // Add the clicked effect
+		// When a .clickable element is clicked, it's background color is changed 
+		$('section .clickable').click(function(){
 			$(this).css('background-color', selectedColour);
 		});
 	});
-
-
-
-	// Cuando se clicka en algo del canvas, se pinta con el color que sea selectedColour
 });
-// function selectColour() {
-// 	// body...
-// }
-// function changeBackground (event) {
-	
-// }
-// function changeBackground(e){
-//     console.log($(e).attr('class'));
-    
-// };
-
-// $('.priority').click(function(event){changeBackground(event.currentTarget)});

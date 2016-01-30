@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-family: helvetica;
+}
 .center{
 	text-align: center;
 }
@@ -11,18 +14,16 @@ header h1,
 header .colours-container{
 	margin-top: 30px;
 }
-header .colours-container{
-
-}
 .colours-container .colour{
 	display: inline-block;
 	width: 50px;
 	height: 50px;
 
 	margin: 0 20px;
-	border: 2px solid #ccc;
+	border: 3px solid #ccc;
 	border-radius: 3px;
 }
+/* Background colors for the available colours*/
 .colours-container .blue{
 	background-color: blue;
 }
@@ -47,20 +48,45 @@ header .colours-container{
 .colours-container .black{
 	background-color:black;
 }
-.colours-container .purple{
-	background-color:purple;
-}
-.colours-container .grey{
-	background-color:grey;
-}
+/*Clicked effect */
 .colours-container .clicked{
-	outline: 3px solid #24CDFF;
-	transition: outline 0.1s;
+	border: 3px solid #24CDFF;
+	transition: border 0.5s;
 }
 
 /* Canvas */
 .container{
-	margin: 50px auto;
+	margin: 50px 0;
 	background-color: #ccc;
 	height: 500px;
+}
+.container div{
+	height: 100%;
+	width: 25%;
+	display: inline-block;
+	float: left;
+}
+.container .rectangle-container div{
+	width: 100%;
+	height: 50%;
+}
+.container .circle-container{
+	width: 50%;
+}
+.circle-container .up-down-border{
+	width: 100%;
+	height: 25%;
+}
+.circle-container .circle-border{
+	width: 25%;
+	height: 50%;
+}
+.circle-container .circle-border-container{
+	width: 50%;
+	height: 50% !important;
+}
+.circle-container .circle{
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
 }
