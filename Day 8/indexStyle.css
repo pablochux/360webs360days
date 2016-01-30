@@ -1,0 +1,66 @@
+/*Reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.center{
+	text-align: center;
+}
+/* Colours available */
+header h1, 
+header .colours-container{
+	margin-top: 30px;
+}
+header .colours-container{
+
+}
+.colours-container .colour{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+
+	margin: 0 20px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+}
+.colours-container .blue{
+	background-color: blue;
+}
+.colours-container .red{
+	background-color:red;
+}
+.colours-container .white{
+	background-color:white;
+}
+.colours-container .yellow{
+	background-color:yellow;
+}
+.colours-container .green{
+	background-color:green;
+}
+.colours-container .brown{
+	background-color:brown;
+}
+.colours-container .orange{
+	background-color:orange;
+}
+.colours-container .black{
+	background-color:black;
+}
+.colours-container .purple{
+	background-color:purple;
+}
+.colours-container .grey{
+	background-color:grey;
+}
+.colours-container .clicked{
+	outline: 3px solid #24CDFF;
+	transition: outline 0.1s;
+}
+
+/* Canvas */
+.container{
+	margin: 50px auto;
+	background-color: #ccc;
+	height: 500px;
+}
