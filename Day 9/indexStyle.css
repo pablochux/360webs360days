@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{ 
+	background: url(images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body{
+	color: #FFF;
+}
+/* Center the section */
+section{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+/* Center the button */
+button{
+	width: 109px;
+	height: 41px;
+
+	color: inherit;
+	font-size: 18px;
+	font-family: 'Apple SD Gothic Neo';
+	
+	padding: 10px 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	
+	background-color: #E44235;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 6px 0 0 #A13435;
+	outline: none;
+}
+/* Button effect */
+button:hover{
+	top: 3px;
+	box-shadow: 0 3px 0 0 #A13435;
+}
+button:active{
+	top: 6px;
+	box-shadow: 0 0 0 0 #A13435;
+}
+div{
+	display: none;
+	transition: display 2s;
+}
+p{
+	font-size: 20px;
+	text-align: center;
+	width: 300px;
+	height: 216px;
+}
+.display{
+	width: 300px;
+	height: 216px;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+.back{
+	margin-top: 180px;
+}
