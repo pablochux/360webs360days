@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.center{
+	text-align: center;
+}
+html{
+	background-color: #FCF7F2;
+}
+body{
+	font-family: Monaco;
+	height: 1828px;
+	width: 100%;
+}
+.scroll-down{
+	/* Scroll down: */
+	font-size: 14px;
+	color: #CCC;
+	line-height: 17px;
+	padding: 100px 0 10px 50px;
+}
+p{
+	/* Anyone who has never: */
+	font-size: 28px;
+	color: #262626;
+	letter-spacing: 2px;
+	line-height: 34px;
+	max-width: 100%;
+}
+a{
+	/* Albert Einstein: */
+	font-size: 18px;
+	color: #606082;
+	letter-spacing: 1.28px;
+	line-height: 22px;
+	text-decoration: none;
+}
+a:hover{
+	color: rgb(95, 131, 96);
+}
+/* Moving title */
+.title-top{
+	position: fixed;
+}
+.title-bottom{
+	position: relative;
+	top: 1000px;
+}
+.title-top,
+.title-bottom p{
+	margin-left: 50px;
+}
+.author{
+	margin-left: 600px;
+}
