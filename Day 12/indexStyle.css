@@ -1,8 +1,44 @@
+/* General */
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
-
+html{ 
+	background: url(images/bg.jpeg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body{
+	color: #fff;
+	font-family: AppleGothic, sans-serif;
+}
 .center{
 	text-align: center;
+}
+
+h1{
+	/* Use vh to automatically scale the text depending on the screen size*/
+	font-size: 20vh;
+	font-weight: 100;
+
+	margin-top: 70px;
+}
+/* Date */
+.date-container{
+    font-weight: 100;
+    font-size: 10vh;
+    
+    display: inline-block;
+}
+.date-container>div{
+	display: inline-block;
+
+	padding: 10px;
+}
+.text{  
+	font-size: 3vh;
+	margin-top: 5px;
 }
