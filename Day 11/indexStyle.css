@@ -3,7 +3,8 @@
 	padding: 0;
 }
 body{
-	font-family: AppleGothic;
+	color: #fff;
+	font-family: AppleGothic;	
 }
 li{
 	list-style: none;
@@ -18,7 +19,7 @@ li{
 	margin: auto;
 }
 .nav-days li{
-	background: #F1C40F;
+	background-color: #F1C40F;
 	
 	width: 120px;
 	height: 100%;
@@ -26,20 +27,20 @@ li{
 
 	float: left;
 }
+/* day*/
+.nav-days .today{
+    background-color: #16A085;
+    box-shadow: -3px 0px grey;
+    
+    height: 200%;
+}
 h1, h2{
-	color: #fff;
 	text-align: center;
 }
 h1, .day{
 	font-size: 48px;
 	color: #FFFFFF;
 	text-shadow: -6px 3px 4px rgba(0,0,0,0.50);
-	position: absolute;
-	margin: auto;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
 }
 .phrase{
 	/* Phrase div */
@@ -49,4 +50,38 @@ h1, .day{
 	width: 100%;
 	height: 200px;
 	margin-top: 100px;
+}
+.phrase h1{
+	padding-top: 5%;
+}
+/* Another One btn */
+.btn{
+	font-family: inherit;
+	color: inherit;
+	font-size: 1.2rem;
+
+	background-color: #F1C40F;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+
+	position: relative;
+	margin-top: 20px;
+	padding: 10px 15px;
+}
+/* Button effect with box-shadow and position: relative*/
+.btn-effect{
+	box-shadow: 0px 6px #D4AA00;
+}
+.btn-effect:hover{
+	top: 3px;
+	box-shadow: 0px 3px #D4AA00;
+}
+.btn-effect:active{
+	top: 6px;
+	box-shadow: 0px 0px #D4AA00;
+}
+/* Disabled effect*/
+.disabled{
+	box-shadow: 0px 0px #D4AA00;
 }
