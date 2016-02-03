@@ -3,17 +3,40 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+body{
+	background-color: #000;
+}
 .center{
 	text-align: center;
 }
+.btn{
+	font-family: inherit;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1.2rem;
+
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 3px #ccc;
+	outline: none;
+
+	position: relative;
+	margin-top: 20px;
+	padding: 10px 15px;
+}
+.btn:hover{
+	top: 2px;
+	box-shadow: 0px 1px #ccc;
+}
+.btn:active{
+	top: 3px;
+	box-shadow: 0px 0px #ccc:
+}
 section{
-	width: 900px;
-	height: 900px;
-	margin: auto;
+	margin: 20px auto;
 }
 .horizontal-line{
-	width: 100px;
-	height: 100px;
+	width: 10vw;
+	height: 10vh;
 	float: right;
 }
