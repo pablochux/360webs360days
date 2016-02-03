@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.center{
+	text-align: center;
+}
+section{
+	width: 900px;
+	height: 900px;
+	margin: auto;
+}
+.horizontal-line{
+	width: 100px;
+	height: 100px;
+	float: right;
+}
