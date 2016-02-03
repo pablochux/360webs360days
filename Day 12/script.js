@@ -1,41 +1,39 @@
 $(document).ready(function(){
-	var deadLineDate = 'December 31 ' + nextYear + ' 23:59:59';
 	var nextDate = new Date();
-	var nextYear = nextDate.getFullYear();
+	var deadLineDate = 'December 31 ' + nextDate.getFullYear() + ' 23:59:59';	
 	initializeClock(deadLineDate);
 });
 
+function initializeClock(deadLineDate) {
+	function updateClock(deadLineDate) {
+		// Get the remaining time and update all the date
+		var time = getTimeRemaining(deadLineDate);
+		$('.days').text(time.days);
+		$('.hours').text(('0' + time.hours).slice(-2));
+		$('.minutes').text(('0' + time.minutes).slice(-2));
+		$('.seconds').text(('0' + time.seconds).slice(-2));
+		// If there isn't time -> Stop
+		if(time.total <= 0){
+			clearInternval(timeInterval);
+		}
+	}
+	updateClock(deadLineDate);
+	var timeinterval = setInterval(function(){updateClock(deadLineDate)}, 1000);
+}
+
 function getTimeRemaining(deadLineDate) {
 	// Future date - actual date = remaining date 
-	var t = Date.parse(deadLineDate) - Date.now();
-	// var seconds = Math.floor((t / 1000) % 60);
-	// var minutes = Math.floor((t / 1000 / 60) % 60);
-	// var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-	// var days = Math.floor(t / (1000 * 60 * 60 * 24));
+	var time = Date.parse(deadLineDate) - Date.now();
+	var seconds = Math.floor((time / 1000) % 60);
+	var minutes = Math.floor((time / 1000 / 60) % 60);
+	var hours = Math.floor((time / (1000 * 60 * 60)) % 24);
+	var days = Math.floor(time / (1000 * 60 * 60 * 24));
 	// returns an array with the data
 	return {
-		'total': t,
+		'total': time,
 		'days': days,
 		'hours': hours,
 		'minutes': minutes,
 		'seconds': seconds
 	};
-}
-
-function initializeClock(endTime) {
-	// Refresh all the data
-	// t is an array with all the data
-	var t = getTimeRemaining(endTime);
-	function updateClock(t) {
-		$('.days').text(t.days);
-		$('.hours').text(('0' + t.hours).slice(-2));
-		$('.minutes').text(('0' + t.minutes).slice(-2));
-		$('.seconds').text(('0' + t.seconds).slice(-2));
-	}
-	updateClock(t);
-	// cuando se ha llegado al fin del tiempo (00000000)
-	if (t.total <= 0) {
-		clearInterval(timeinterval);
-	}
-	var timeinterval = setInterval(updateClock, 1000);
 }
