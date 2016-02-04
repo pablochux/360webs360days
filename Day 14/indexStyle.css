@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #fff;
+	font-weight: 100;
+}
+section{
+
+}
+h1{
+	margin-top: 30px;
+	font-size: 3rem;
+}
+section>h3{
+	display: inline-block;
+}
+h1, h3{
+	font-weight: inherit;
+	letter-spacing: 2px;
+}
+.center{
+	text-align: center;
+}
+html{ 
+	background: url(images/bg.jpeg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section div{
+	display: block;
+}
+.record-left{
+	margin-right: 50px;
+}
+.record-right{
+	margin-left: 10px;
+}
+.btn{
+	font-family: inherit;
+	color: inherit;
+	font-size: 1.3rem;
+
+	border: none;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.50);
+	outline: none;
+
+	position: relative;
+	margin-top: 20px;
+	padding: 10px 15px;
+}
+.click{
+	background-color: rgba(255,31,31,0.80);
+
+	border-radius: 100%;
+
+	width: 80px;
+	height: 80px;
+}
+.click:hover{
+	background-color: rgb(255,31,31);
+}
+.click:active{
+	top: 2px;
+}
+.reset{
+	border-radius: 5px;
+	background-color: rgba(0, 172, 193, 0.70);
+	color: rgba(255, 255, 255, 0.8);
+}
+.reset:hover{
+	background-color: rgba(0, 172, 193, 0.90);
+	color: #fff;
+}
+.reset:active{
+	background-color: rgb(0, 172, 193);
+	top: 2px;
+}
+div h3{
+	margin-top: 20px;
+}
