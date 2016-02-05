@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.center{
+	text-align: center;
+}
+body{
+	font-family: Arial;
+
+	-webkit-user-select: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+/* Header/Nav */
+header{
+	background-color: #5C00DE;
+	color: #FFF;
+	font-size: 1.1rem;
+	padding: 20px; /* Padding to the header to center vertically and move a little horizontally the li elements of the navbar (text is 20px)*/
+
+	height: 60px;
+}
+nav li{
+	display: inline-block;
+	margin-right: 20px;
+}
+/* Section -> Img/Text */
+.img-container,
+.text-container{
+	cursor: pointer;
+}
+.img-container{
+
+}
+img{
+	margin: 60px;
+}
+.text-container{
+	letter-spacing: 1px;
+    line-height: 1.3;
+
+	width: 480px;
+	margin: auto;
+}
+.text-container h1{
+	font-size: 30px;
+	font-weight: 300;
+}
