@@ -317,4 +317,3 @@ img{
 	90% {transform: translateX(60px) translateY(-60px) scale(1.5, 1.5);}
 	100% {transform: translateX(0) translateY(0) scale(1, 1);}
 }
-
