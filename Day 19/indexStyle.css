@@ -80,9 +80,8 @@ section{
 	left: 3px;
 	box-shadow: 0 0 0 0 #9A0013;	
 }
-
 .btn-1, 
 .btn-2,
 .btn-3{
-	display: none;
+	visibility: hidden;
 }
