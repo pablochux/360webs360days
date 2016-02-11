@@ -4,31 +4,188 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: red;
+	background-color: #333;
+	color: #333;
 }
 .center{
 	text-align: center;
 }
+/* HEADER */
+.header, 
+.shake{
+	margin-top: 20px;
+}
+h1{
+	color: white;
+}
+/* CUBE */
+.dices-container{
+	width: 500px;
+	margin: 40px auto;
+}
+.container {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	-webkit-perspective: 1000;
+	display: inline-block;
+}
+.container:first-child{
+	margin-right: 96px;
+}
+.cube {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-webkit-animation: testAnimation 0.5s ;
+}
+.cube figure {
+	color: #000;
+	width: 196px;
+	height: 196px;
+	display: block;
+	position: absolute;
+	border: 2px solid black;
+	background-color: #FFF;
+}
+.cube figure span{
+	width: 40px;
+	height: 85px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	font-size: 5rem
+}
+/* Buzz animation */
+.buzz{
+	position: relative;
+	-webkit-animation: buzz 0.5s infinite; /* Safari 4+ */
+  -moz-animation: buzz 0.5s infinite; /* Fx 5+ */
+  -o-animation: buzz 0.5s infinite; /* Opera 12+ */
+	animation: buzz 0.5s infinite;
+}
+/*Rotating the sides of the cube*/
+.cube .front { -webkit-transform: rotateY(0deg); }
+.cube .back { -webkit-transform: rotateX(180deg); }
+.cube .right { -webkit-transform: rotateY(90deg); }
+.cube .left { -webkit-transform: rotateY(-90deg); }
+.cube .top { -webkit-transform: rotateX(90deg); }
+.cube .bottom { -webkit-transform: rotateX(-90deg); }
+
+.cube .front { -webkit-transform: rotateY(0deg) translateZ(100px); }
+.cube .back { -webkit-transform: rotateX(180deg) translateZ(100px); }
+.cube .right { -webkit-transform: rotateY(90deg) translateZ(100px); }
+.cube .left { -webkit-transform: rotateY(-90deg) translateZ(100px); }
+.cube .top { -webkit-transform: rotateX(90deg) translateZ(100px); }
+.cube .bottom { -webkit-transform: rotateX(-90deg) translateZ(100px); }
+
+.cube { -webkit-transform: translateZ(-100px); }
+
+.cube.show-front { -webkit-transform: translateZ(-100px) rotateY(0deg); }
+.cube.show-back { -webkit-transform: translateZ(-100px) rotateX(-180deg); }
+.cube.show-right { -webkit-transform: translateZ(-100px) rotateY(-90deg); }
+.cube.show-left { -webkit-transform: translateZ(-100px) rotateY(90deg); }
+.cube.show-top { -webkit-transform: translateZ(-100px) rotateX(-90deg); }
+.cube.show-bottom { -webkit-transform: translateZ(-100px) rotateX(90deg); }
+.cube.show { -webkit-transform: translateZ(-100px) rotateX(20deg); }
+
+.cube { -webkit-transition: -webkit-transform 2s; }
+
+/* Button */
 .btn{
+	/* Rectangle 4: */
 	font-family: inherit;
 	color: inherit;
 	font-size: 1.2rem;
 
-	background-color: ;
+	background-color: #fff;
 	border: none;
 	border-radius: 5px;
-	box-shadow: 0px 6px ;
+	box-shadow: 2px 2px 0px 0px rgba(255,255,255,0.80), 4px 4px 0px 0px rgba(255,255,255,0.60), 6px 6px 0px 0px rgba(255,255,255,0.40);
 	outline: none;
 
 	position: relative;
-	margin-top: 20px;
 	padding: 15px 20px;
 }
 .btn:hover{
-	top: 3px;
-	box-shadow: 0px 3px ;
+	top: 2px;
+	left: 2px;
+	box-shadow: 2px 2px 0px 0px rgba(255,255,255,0.80), 4px 4px 0px 0px rgba(255,255,255,0.60);
 }
 .btn:active{
-	top: 6px;
-	box-shadow: 0px 0px :
+	top: 4px;
+	left: 4px;
+	box-shadow: 2px 2px 0px 0px rgba(255,255,255,0.80);
+}
+
+
+/* KEYFRAME BUZZ */
+@-webkit-keyframes buzz{
+	0%{right: 0;}
+	10%{right: -2px;}
+	20%{right: 2px;}
+	30%{right: -2px;}
+	40%{right: 2px;}
+	50%{right: -2px;}
+	60%{right: 2px;}
+	70%{right: -2px;}
+	80%{right: 2px;}
+	90%{right: -2px;}
+	100%{right: 0;}
+}
+@-moz-keyframes buzz{
+	0%{right: 0;}
+	10%{right: -2px;}
+	20%{right: 2px;}
+	30%{right: -2px;}
+	40%{right: 2px;}
+	50%{right: -2px;}
+	60%{right: 2px;}
+	70%{right: -2px;}
+	80%{right: 2px;}
+	90%{right: -2px;}
+	100%{right: 0;}
+}
+@-ms-keyframes buzz{
+	0%{right: 0;}
+	10%{right: -2px;}
+	20%{right: 2px;}
+	30%{right: -2px;}
+	40%{right: 2px;}
+	50%{right: -2px;}
+	60%{right: 2px;}
+	70%{right: -2px;}
+	80%{right: 2px;}
+	90%{right: -2px;}
+	100%{right: 0;}
+}
+@-o-keyframes buzz{
+	0%{right: 0;}
+	10%{right: -2px;}
+	20%{right: 2px;}
+	30%{right: -2px;}
+	40%{right: 2px;}
+	50%{right: -2px;}
+	60%{right: 2px;}
+	70%{right: -2px;}
+	80%{right: 2px;}
+	90%{right: -2px;}
+	100%{right: 0;}
+}
+@keyframes buzz{
+	0%{right: 0;}
+	10%{right: -2px;}
+	20%{right: 2px;}
+	30%{right: -2px;}
+	40%{right: 2px;}
+	50%{right: -2px;}
+	60%{right: 2px;}
+	70%{right: -2px;}
+	80%{right: 2px;}
+	90%{right: -2px;}
+	100%{right: 0;}
 }
