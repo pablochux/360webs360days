@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Roboto;
+}
+.center{
+	text-align: center;
+}
+/* Clearfix for the floats */
+.clear{
+	clear: both;
+}
+button{
+	font-size: 1.2rem;
+	padding: 10px 15px;
+	outline: none;
+}
+/* MAIN */
+.main{
+	padding: 10px;
+}
+.main>div{
+	display: inline-block;
+}
+/* Users */
+.user{
+	border-bottom: 1px solid #00ACE9;
+}
+.user-left,
+.user-right{
+	width: 350px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.user h2{
+	font-family: Roboto-Light;
+	font-size: 24px;
+	letter-spacing: 2.4px;
+	line-height: 28px;
+	
+	color: #D11250;
+
+	padding: 20px;
+}
+.weapon-container{
+	margin-top: 50px;
+}
+.weapon-container>img{
+	position: relative;
+}
+/* CHOOSE */
+.choose{
+	color: #008f68;
+	
+	max-width: 100px;
+	/* Update the position (FIX)*/
+	position: relative;
+	top: -90px;
+}
+/* WEAPON SELECTOR */
+.weapon-selector{
+	text-align: right;
+	
+	margin-top: 100px;
+	padding-right: 50px;
+	width: 100%;
+}
+.weapon-selector>button{
+	color: #333;
+
+	background-color: rgba(0, 172, 233, 0.8);
+	border: 1px solid #fff;
+}
+.weapon-selector>button:hover{
+	background-color: rgba(0, 172, 233, 1);
+	border: 1px solid rgba(0, 172, 233, 1);
+}
+
+/* RESULT */
+.result{
+	color: #008f68;
+	font-size: 2rem;
+	
+	width: 100%; 
+	
+	display: block;
+	visibility: hidden;
+}
+.result h1{
+	margin-left: 84px;
+	display: inline-block;
+}
+.btn{
+	font-family: inherit;
+	color: #fff;
+
+	background-color: #D11250;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 6px #AF0D41;
+
+	position: relative;
+	float: right;
+	padding: 10px 15px;
+}
+.btn:hover{
+	top: 3px;
+	box-shadow: 0px 3px #AF0D41;
+}
+.btn:active{
+	top: 6px;
+	box-shadow: 0px 0px #AF0D41;
+}
+
+/* MOVING */
+.shake{
+	-webkit-animation: shake 2s;
+	-moz-animation: shake 2s;
+	-ms-animation: shake 2s;
+	-o-animation: shake 2s;
+	animation: shake 2s;
+}
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateY(0);} 
+	14%, 43%, 71%, 95%, 100% {-webkit-transform: translateY(30px);
+						 -webkit-animation-timing-function: ease-out; } 
+	29%, 57%, 86% {-webkit-transform: translateY(-30px);
+				   -webkit-animation-timing-function: ease-out} 
+}
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateY(0);} 
+	14%, 43%, 71%, 95%, 100% {-moz-transform: translateY(30px);
+						 -moz-animation-timing-function: ease-out; } 
+	29%, 57%, 86% {-moz-transform: translateY(-30px);
+				   -moz-animation-timing-function: ease-out} 
+}
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateY(0);} 
+	14%, 43%, 71%, 95%, 100% {-o-transform: translateY(30px);
+						 -o-animation-timing-function: ease-out; } 
+	29%, 57%, 86% {-o-transform: translateY(-30px);
+				   -o-animation-timing-function: ease-out} 
+}
+@-ms-keyframes shake {
+	0%, 100% {-ms-transform: translateY(0);} 
+	14%, 43%, 71%, 95%, 100% {-ms-transform: translateY(30px);
+						 -ms-animation-timing-function: ease-out; } 
+	29%, 57%, 86% {-ms-transform: translateY(-30px);
+				   -ms-animation-timing-function: ease-out} 
+}
+@keyframes shake {
+	0%, 100% {transform: translateY(0);} 
+	14%, 43%, 71%, 95%, 100% {transform: translateY(30px);
+						 animation-timing-function: ease-out; } 
+	29%, 57%, 86% {transform: translateY(-30px);
+				   animation-timing-function: ease-out} 
+}
