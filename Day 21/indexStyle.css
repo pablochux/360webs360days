@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #333;
+	color: #fff;
+	font-family: Roboto;
+}
+.center{
+	text-align: center;
+}
+/* SECTION .MAIN */
+/* Center horizontally and vertically .main */
+.main{
+	width: 300px;
+    height: 300px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+/* Re*/
+.new-word{
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+h1,
+.btn{
+	font-weight: 100;
+}
+.btn{
+	font-family: inherit;
+	color: inherit;
+	font-size: 1.2rem;
+	font-weight: 100;
+	letter-spacing: 2px;
+
+	background-color: #E44235;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 6px #A13435;
+	outline: none;
+
+	position: relative;
+	margin-top: 20px;
+	padding: 10px 15px;
+}
+.btn:hover{
+	top: 3px;
+	box-shadow: 0px 3px #A13435;
+}
+.btn:active{
+	top: 6px;
+	box-shadow: 0px 0px #A13435;
+}
