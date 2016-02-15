@@ -1,24 +1,25 @@
-$(document).ready(function(){
-	$('.btn').click(function(){
-		// Change h1 with new word and add 
-		$('h1').text(createRandomWord(8)).addClass('new-word');
-	});
+$(document).ready(function() {
+    $('.btn').click(function() {
+        // Change h1 with new word and add
+        $('h1').text(createRandomWord(8)).addClass('new-word');
+    });
 });
 // Create random word
 function createRandomWord(length) {
     var consonants = 'bcdfghjklmnpqrstvwxyz',
         vowels = 'aeiou',
         rand = function(limit) {
-            return Math.floor(Math.random()*limit);
+            return Math.floor(Math.random() * limit);
         },
-        i, word='', length = parseInt(length, 10),
+        i, word = '',
+        length = parseInt(length, 10),
         consonants = consonants.split(''),
         vowels = vowels.split('');
-    for (i=0;i<length/2;i++) {
+    for (i = 0; i < length / 2; i++) {
         var randConsonant = consonants[rand(consonants.length)],
             randVowel = vowels[rand(vowels.length)];
-        word += (i===0) ? randConsonant.toUpperCase() : randConsonant;
-        word += i*2<length-1 ? randVowel : '';
+        word += (i === 0) ? randConsonant.toUpperCase() : randConsonant;
+        word += i * 2 < length - 1 ? randVowel : '';
     }
     return word;
 }
