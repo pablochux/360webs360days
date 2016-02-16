@@ -15,10 +15,16 @@ body{
 .center{
 	text-align: center;
 }
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
 /* ------- SECTION ------------ */
 section{
     /* whatever width or height */
-	width: 600px;
+	width: 800px;
     height: 400px;
 
     position: absolute;
@@ -32,22 +38,29 @@ section{
 h1{
 	font-size: 4rem;
 	font-weight: 100;
+	padding-bottom: 50px;
 }
 h2{
 	font-weight: 700;
 	letter-spacing: 2px;
+	padding-bottom: 50px;
 }
+/* INPUT */
+input{
+	color: #ccc;
+	font-size: 1.3rem;
+	outline: none;
+
+	margin-top: 100px;
+	padding-left: 20px;
+}
+.button-container,
 input{
 	width: 380px;
 	height: 80px;
-	color: #ccc;
-	padding-left: 20px;
-	font-size: 1.3rem;
-	outline: none;
+	margin: auto;
 }
-.btn{
-	margin-right: 20px;
-}
+/* BUTTONS */
 .btn{
 	font-family: inherit;
 	color: inherit;
